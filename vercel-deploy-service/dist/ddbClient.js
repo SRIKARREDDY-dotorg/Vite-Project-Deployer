@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.updateRecord = void 0;
 const aws_sdk_1 = require("aws-sdk");
 const ddb = new aws_sdk_1.DynamoDB({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     endpoint: 'https://dynamodb.us-east-1.amazonaws.com',
     region: 'us-east-1'
 });

@@ -17,8 +17,8 @@ const aws_sdk_1 = require("aws-sdk");
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const s3 = new aws_sdk_1.S3({
-    accessKeyId: "AKIAZI2LFW3UTTZ2UEB6",
-    secretAccessKey: "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",
+    accessKeyId: "XXXXXXXXXXXXXXXXXXXXX",
+    secretAccessKey: "XXXXXXXXXXXXXXXXXXXXX",
     endpoint: "https://s3.us-east-1.amazonaws.com"
 });
 // output/asdasd

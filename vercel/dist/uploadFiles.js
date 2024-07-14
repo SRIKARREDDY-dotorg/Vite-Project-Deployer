@@ -16,8 +16,8 @@ exports.uploadFile = void 0;
 const aws_sdk_1 = require("aws-sdk");
 const fs_1 = __importDefault(require("fs"));
 const s3 = new aws_sdk_1.S3({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     endpoint: 'https://s3.us-east-1.amazonaws.com'
 });
 const uploadFile = (fileName, localFilePath) => __awaiter(void 0, void 0, void 0, function* () {

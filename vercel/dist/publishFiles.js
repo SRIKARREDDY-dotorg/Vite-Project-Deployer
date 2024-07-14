@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.publishMessageToSNS = publishMessageToSNS;
 const aws_sdk_1 = require("aws-sdk");
 const sns = new aws_sdk_1.SNS({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     region: 'us-east-1',
     endpoint: 'https://sns.us-east-1.amazonaws.com'
 });

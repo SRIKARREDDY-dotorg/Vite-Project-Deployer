@@ -3,8 +3,8 @@ import fs from "fs";
 import path from "path";
 
 const s3 = new S3({
-    accessKeyId: "AKIAZI2LFW3UTTZ2UEB6",
-    secretAccessKey: "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",
+    accessKeyId: "XXXXXXXXXXXXXXXXXXXXX",
+    secretAccessKey: "XXXXXXXXXXXXXXXXXXXXX",
     endpoint: "https://s3.us-east-1.amazonaws.com"
 })
 
@@ -36,7 +36,7 @@ export async function downloadS3Folder(prefix: string) {
                 fs.mkdirSync(dirName, { recursive: true });
             }
 
-            
+
             s3.getObject({
                 Bucket: "vercel-project-clone",
                 Key

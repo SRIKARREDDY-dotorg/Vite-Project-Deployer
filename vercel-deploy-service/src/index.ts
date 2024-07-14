@@ -5,8 +5,8 @@ import { copyFinalDist } from "./uploadS3Files";
 import { updateRecord } from "./ddbClient";
 
 const sqs = new SQS({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     region: 'us-east-1'
 });
 

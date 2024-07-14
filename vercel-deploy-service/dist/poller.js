@@ -3,8 +3,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.pollMessages = pollMessages;
 const aws_sdk_1 = require("aws-sdk");
 const sqs = new aws_sdk_1.SQS({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     region: 'us-east-1'
 });
 const queueUrl = 'https://sqs.us-east-1.amazonaws.com/637423433449/vercel-queue';

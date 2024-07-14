@@ -1,8 +1,8 @@
 import {DynamoDB} from "aws-sdk";
 
 const ddb = new DynamoDB({
-    accessKeyId: 'AKIAZI2LFW3UTTZ2UEB6',
-    secretAccessKey: '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',
+    accessKeyId: 'XXXXXXXXXXXXXXXXXXXXX',
+    secretAccessKey: 'XXXXXXXXXXXXXXXXXXXXX',
     endpoint: 'https://dynamodb.us-east-1.amazonaws.com',
     region: 'us-east-1'
 });
