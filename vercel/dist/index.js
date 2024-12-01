@@ -27,7 +27,7 @@ app.use((0, cors_1.default)());
 app.use(express_1.default.json());
 app.post("/deploy", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const repoUrl = req.body.repoUrl;
-    // console.log(repoUrl);
+    console.log(repoUrl);
     const id = (0, utils_1.generate)();
     yield (0, simple_git_1.default)().clone(repoUrl, path_1.default.join(__dirname, `output/${id}`));
     const files = (0, files_1.getAllFiles)(path_1.default.join(__dirname, `output/${id}`));
@@ -51,4 +51,9 @@ app.get('/status', (req, res) => __awaiter(void 0, void 0, void 0, function* () 
         status: (_a = response === null || response === void 0 ? void 0 : response.Item) === null || _a === void 0 ? void 0 : _a.status
     });
 }));
+app.get('/', (req, res) => {
+    res.json({
+        message: "Hello wells!"
+    });
+});
 app.listen(3000);

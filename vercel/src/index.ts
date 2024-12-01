@@ -8,15 +8,13 @@ import { uploadFile } from "./uploadFiles";
 import { publishMessageToSNS } from "./publishFiles";
 import { addRecord, getRecord } from "./ddbClient";
 
-// publishMessageToSNS("Hello Queue, this is srikar");
-
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 app.post("/deploy", async (req, res) => {
     const repoUrl = req.body.repoUrl;
-    // console.log(repoUrl);
+    console.log(repoUrl);
     const id = generate();
  
     await simpleGit().clone(repoUrl, path.join(__dirname, `output/${id}`));
@@ -47,5 +45,11 @@ app.get('/status', async (req, res) => {
         status: response?.Item?.status
     });
 });
+
+app.get('/', (req, res) => {
+    res.json({
+        message: "Hello wells!"
+    });
+})
 
 app.listen(3000);
